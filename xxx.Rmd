@@ -1,0 +1,12 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r}
+library(Seurat)
+pbmc<-readRDS("renamed_clustered_PBMC.rds")
+ru<-DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5,label.size = 3)
+ru
+```
